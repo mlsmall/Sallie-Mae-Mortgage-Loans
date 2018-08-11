@@ -1,0 +1,39 @@
+/*
+create table performance (
+        id varchar(55),
+        reporting_period varchar(55),
+        servicer_name varchar(55),
+        interest_rate varchar(55),
+        balance varchar(55),
+        loan_age varchar(55),
+        months_to_maturity varchar(55),
+	    adjusted_months_maturity varchar(55),
+        maturity_date varchar(55),
+        msa varchar(55),
+        delinquency_status varchar(55),
+        modification_flag varchar(55),
+        zero_balance_code varchar(55),
+        zero_balance_date varchar(55),
+        last_paid_installment_date varchar(55),
+        foreclosure_date varchar(55),
+        disposition_date varchar(55),
+        foreclosure_costs varchar(55),
+        property_repair_costs varchar(55),
+        recovery_costs varchar(55),
+        misc_costs varchar(55),
+        tax_costs varchar(55),
+        sale_proceeds varchar(55),
+        credit_enhancement_proceeds varchar(55),
+        repurchase_proceeds varchar(55),
+        other_foreclosure_proceeds varchar(55),
+        non_interest_bearing_balance varchar(55),
+        principal_forgiveness_balance varchar(55),
+	    repurchase_proceeds_flag varchar(55),
+	    foreclossure_writeoff varchar(55),
+	    servicing_monitor varchar(55)
+)
+*/
+
+select distinct id, foreclosure_date from performance
+order by id
+
