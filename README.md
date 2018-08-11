@@ -6,4 +6,6 @@ The data can be [downloaded here] (http://www.fanniemae.com/portal/funding-the-m
 
 The data was prepared using postgreSQL before it was imported into python. The code used is called "SQL query", and you can find it in this folder.
 
-The prepared data is in the folder called "prepared data" and the file you can run in python is called "Sallie Mae.py".
+The prepared data that you can import into Python consits of 2 files called performance.csv and acquisition.csv. 
+
+The Python file to run is called "Sallie Mae.py".
