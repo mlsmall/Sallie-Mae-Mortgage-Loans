@@ -31,7 +31,7 @@ from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 
 # Generating prediction model with balanced class weight and training data
-model = LogisticRegression(class_weight="balanced")
+model = LogisticRegression(class_weight="balanced", solver="liblinear", multi_class = 'ovr')
 model.fit(Xtrain,ytrain)
 
 # Generating predictions with the testing data
@@ -42,4 +42,4 @@ from sklearn.metrics import confusion_matrix, accuracy_score
 
 cm = confusion_matrix(ytest, predictions)
 
-accuracy = metrics.accuracy_score(ytest, predictions)
+accuracy = accuracy_score(ytest, predictions)
